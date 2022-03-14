@@ -5,10 +5,13 @@
 }
 
 body {
+    font-family: sans-serif;
+}
+
+#app {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    font-family: sans-serif;
 }
 
 header {

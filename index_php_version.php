@@ -81,32 +81,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Php</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="./logo.svg" alt="logo">
-        </div>
-    </header>  
 
-    <main>
-        <div class="container">
-            <?php
-                foreach($albums as $album) {
-
-                    echo '<div class="card">';
-
-                    echo '<img src="' . $album['poster']. '">';
-                    echo '<h2>' . $album['title'] . '</h2>';
-                    echo '<div class="artist">' . $album['author'] . '</div>';
-                    echo '<div class="year">' . $album['year'] . '</div>';
-                    
-                    echo '</div>';
-                }
-            ?>
-        </div>
-    </main>
+    <div id="app">
+        <header>
+            <div class="logo">
+                <img src="./logo.svg" alt="logo">
+            </div>
+        </header>  
+    
+        <main>
+            <div class="container">
+                <?php
+                    foreach($albums as $album) {
+    
+                        echo '<div class="card">';
+    
+                        echo '<img src="' . $album['poster']. '">';
+                        echo '<h2>' . $album['title'] . '</h2>';
+                        echo '<div class="artist">' . $album['author'] . '</div>';
+                        echo '<div class="year">' . $album['year'] . '</div>';
+                        
+                        echo '</div>';
+                    }
+                ?>
+            </div>
+        </main>
+    </div>
 
 </body>
 </html>
