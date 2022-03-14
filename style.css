@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #2e3a46;
+    padding: 1rem 1.5rem;
+}
+
+.logo {
+    width: 40px;
+}
+
+.logo img {
+    object-fit: contain;
+    width: 100%;
+}
+
+main {
+    background-color: #1e2d3b;
+    flex: 1 1 0;
+    overflow: auto;
+}
+
+.container {
+    padding-top: 2rem;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #2e3a46;
+    padding: 1rem;
+    color: #808078;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.card img {
+    width: 175px;
+}
+
+.card h2 {
+    text-transform: uppercase;
+    margin: 1rem 0;
+    width: 175px;
+    color: #fff;
+}
